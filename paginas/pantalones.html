@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Pantalones</title>
+    <link rel="stylesheet" href="../Css/toggle.css">
+    <link rel="stylesheet" href="../Css/productos2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/logo-tienda.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="menu__contenedor">
+            <nav class="menu__contenedor-enlaces">
+                <ul class="menu__enlaces-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="gorras.html">Gorras</a></li>
+                    <li><a href="playeras.html">Playeras</a></li>
+                    <li><a href="pantalones.html">Pantalones</a></li>
+                    <li><a href="outfits.html">Outfits</a></li>
+                    <div class="menu__boton-buscar">
+                        <input type="text" placeholder="Buscar" id="search-input">
+                        <div class="btn">
+                            <button id="search-button"><i class="fas fa-search icon"></i></button>
+                        </div>
+                    </div>
+                </ul>
+                <button class="cart-shopping"><i class="fa-solid fa-cart-shopping"></i></button>
+                <div class="cart-items">
+                    <h3>Carrito de compras</h3>
+                    <button class="cart-close-button">Cerrar carrito</button>
+                    <table id="cart-items-table">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre del Producto</th>
+                                <th>Precio</th>
+                                <th>Precio con descuento</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <p id="cart-total-price"></p>
+                    <button id="cart-button-buy">COMPRAR</button>
+                    <button id="cart-button-clear">VACIAR</button>
+                </div>
+            </nav>
+            <div class="menu__icono">
+                <a class="menu__contenedor-logo" href="">
+                    <h1 class="menu__logo-titulo">Tienda de Ropa</h1>
+                    <img  class="menu__logo-negocio" src="../img/logo-tienda.png" alt="logo-negocio">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div class="toggle">
+            <i id="icon" class="icon fa fa-moon"></i>
+        </div>
+    </div>
+
+    <section class="Producto__info">
+        <h2 class="Producto__titulo">Filtrar por categoría:</h2>
+        <select id="category-select" class="category-select">
+            <option value="todos">Todos</option>
+            <option value="hombre">Pantalones para Hombres</option>
+            <option value="mujer">Pantalones para Mujeres</option>
+            <option value="shorts">Shorts para Hombre y Mujer</option>
+            <option value="faldas">Faldas</option>
+        </select>
+    </section>
+
+    <section class="productos">
+        <div class="productos__ropa-card">
+            <!-- fila 1 -->
+            <div class="productos__ropa-cards" data-category="hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-holgado-cafe-claro.jpg" alt="Producto 1">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Café Claro</h2>
+                <p class="productos__ropa-precio">$260</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-holgado-blanco.jpg" alt="Producto 2">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Color Blanco</h2>
+                <p class="productos__ropa-precio">$260</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-holgado-cafe-claro-multiples-bolsas.jpg" alt="Producto 3">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Beige Multiple Bolsa</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-holgado-verde-oscuro.jpg" alt="Producto 4">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Color Verde Oscuro</h2>
+                <p class="productos__ropa-precio">$260</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 2 -->
+            <div class="productos__ropa-cards" data-category="hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-holgado-negro.jpg" alt="Producto 5">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Color Negro</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-mezclilla-azul.jpg" alt="Producto 6">
+                <h2 class="productos__ropa-titulo">Pantalón Mezclilla Color Azul</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-negro-rasgado.jpg" alt="Producto 7">
+                <h2 class="productos__ropa-titulo">Pantalón Mezclilla Rasgado Color Negro</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-mezclilla-gris-oscuro.jpg" alt="Producto 8">
+                <h2 class="productos__ropa-titulo">Pantalón Mezclilla Color Gris Oscuro</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 3 -->
+            <div class="productos__ropa-cards" data-category="hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-mezclilla-azul-oscuro.jpg" alt="Producto 9">
+                <h2 class="productos__ropa-titulo">Pantalón Mezclilla Color Azul Oscuro</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-mezclilla-negro.jpg" alt="Producto 10">
+                <h2 class="productos__ropa-titulo">Pantalón Mezclilla Color Negro</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pans-negro-deportivo.jpg" alt="Producto 11">
+                <h2 class="productos__ropa-titulo">Pans Color Negro Deportivo</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-blanco-rasgado.jpg" alt="Producto 12">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Color Blanco Rasgado</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 4 -->
+            <div class="productos__ropa-cards" data-category="hombre">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-mezclilla-azul-rasgado.jpg" alt="Producto 13">
+                <h2 class="productos__ropa-titulo">Pantalón Mezclilla Color Azul Rasgado</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-holgado-cafe-oscuro-cordon.jpg" alt="Producto 14">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Café Oscuro Cordón</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-holgado-cafe-cordon.jpg" alt="Producto 15">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Café Cordón</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-holgado-gris-oscuro-multiples-bolsas.jpg" alt="Producto 16">
+                <h2 class="productos__ropa-titulo">Pantalón Gris Oscuro Multiple Bolsa</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 5 -->
+            <div class="productos__ropa-cards" data-category="hombre">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-holgado-rosa-bolsa.jpg" alt="Producto 17">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Rosa Multiple Bolsa</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-holgado-morado.jpg" alt="Producto 18">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Morado Multiple Bolsa</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pantalon-holgado-rojo-negro.jpg" alt="Producto 19">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Color Rojo y Negro</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/pantalones/pans-gris-claro-deportivo.jpg" alt="Producto 20">
+                <h2 class="productos__ropa-titulo">Pans Deportivo Color Gris Claro</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos">
+        <div class="productos__ropa-card">
+            <!-- fila 1 -->
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-negro-grafiti.jpg" alt="Producto 1">
+                <h2 class="productos__ropa-titulo">Pantalón Negro Aesthetic Grafiti</h2>
+                <p class="productos__ropa-precio">$350</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-mezclilla-grafiti.jpg" alt="Producto 2">
+                <h2 class="productos__ropa-titulo">Pantalón Mezclilla Azul Grafiti</h2>
+                <p class="productos__ropa-precio">$350</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-negro-love.jpg" alt="Producto 3">
+                <h2 class="productos__ropa-titulo">Pantalón Mezclilla Negro Love</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-aesthetic-cafe.jpg" alt="Producto 4">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Aesthetic Café</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 2 -->
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-aesthetic-gris.jpg" alt="Producto 5">
+                <h2 class="productos__ropa-titulo">Pantalón Mezclilla Aesthetic Gris</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-aesthetic-gris-claro.jpg" alt="Producto 6">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Color Gris Claro</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-aesthetic-cafe-claro.jpg" alt="Producto 7">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Color Café Claro</h2>
+                <p class="productos__ropa-precio">$350</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-cafe.jpg" alt="Producto 8">
+                <h2 class="productos__ropa-titulo">Pantalón Aesthetic Color Café</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 3 -->
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-mezclilla-corazones.jpg" alt="Producto 9">
+                <h2 class="productos__ropa-titulo">Pantalón Mezclilla Holgado Corazones</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-mezclilla-negro-mymelody.jpg" alt="Producto 10">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado My Melody Color Gris</h2>
+                <p class="productos__ropa-precio">$350</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-holgado-gris.jpg" alt="Producto 11">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Color Gris Oscuro</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-holgado-negro.jpg" alt="Producto 12">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Color Negro</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 4 -->
+            <div class="productos__ropa-cards" data-category="mujer">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-holgado-gris-claro.jpg" alt="Producto 13">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Color Gris Claro</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-holgado-verde-oscuro.jpg" alt="Producto 14">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Color Verde Oscuro</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-holgado-verde-militar.jpg" alt="Producto 15">
+                <h2 class="productos__ropa-titulo">Pantalón Holgado Verde Estilo Militar</h2>
+                <p class="productos__ropa-precio">$350</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/pantalones/pantalon-aesthetic-rasgado.jpg" alt="Producto 16">
+                <h2 class="productos__ropa-titulo">Pantalón Aesthetic Rasgado Blanco</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos">
+        <div class="productos__ropa-card">
+            <!-- fila 1 -->
+            <div class="productos__ropa-cards" data-category="shorts">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/shorts/short-color-negro-cordon.jpg" alt="Producto 1">
+                <h2 class="productos__ropa-titulo">Short con Cordón Color Negro</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="shorts">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-hombre/shorts/short-color-gris-cordon.jpg" alt="Producto 2">
+                <h2 class="productos__ropa-titulo">Short con Cordón Color Gris</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="shorts">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/shorts/short-largo-color-cafe.jpg" alt="Producto 3">
+                <h2 class="productos__ropa-titulo">Short Largo Color Café</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="shorts">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/shorts/short-color-gris-oscuro-cordon.jpg" alt="Producto 4">
+                <h2 class="productos__ropa-titulo">Short con Cordón Color Gris Oscuro</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 2 -->
+            <div class="productos__ropa-cards" data-category="shorts">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/shorts/short-deportivo-color-negro-cordon.jpg" alt="Producto 5">
+                <h2 class="productos__ropa-titulo">Short Deportivo Color Negro Cordón</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="shorts">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/shorts/short-deportivo-LA-color-negro-cordon.jpg" alt="Producto 6">
+                <h2 class="productos__ropa-titulo">Short Deportivo LA Color Negro Cordón</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="shorts">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-mujer/shorts/short-deportivo-color-cafe-hawaii.jpg" alt="Producto 7">
+                <h2 class="productos__ropa-titulo">Short Deportivo Color Café Cordón</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="shorts">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/shorts/short-deportivo-color-negro-corto.jpg" alt="Producto 8">
+                <h2 class="productos__ropa-titulo">Short Deportivo CortoColor Negro</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 3 -->
+            <div class="productos__ropa-cards" data-category="shorts">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/shorts/short-mezclilla-corto-azul.jpg" alt="Producto 9">
+                <h2 class="productos__ropa-titulo">Short Mezclilla Corto Azúl</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="shorts">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/shorts/short-mezclilla-corto-azul-oscuro.jpg" alt="Producto 10">
+                <h2 class="productos__ropa-titulo">Short Mezclilla Corto Azúl Oscuro</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="shorts">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/shorts/short-mezclilla-corto-negro.jpg" alt="Producto 11">
+                <h2 class="productos__ropa-titulo">Short Mezclilla Corto Negro</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="shorts">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-mujer/shorts/short-mezclilla-corto-gris-oscuro.jpg" alt="Producto 12">
+                <h2 class="productos__ropa-titulo">Short Mezclilla Corto Gris Oscuro</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos">
+        <div class="productos__ropa-card">
+            <!-- fila 1 -->
+            <div class="productos__ropa-cards" data-category="faldas">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/faldas/falda-cafe-con-cinto.jpg" alt="Producto 1">
+                <h2 class="productos__ropa-titulo">Falda Color Café Con Cinto</h2>
+                <p class="productos__ropa-precio">$260</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="faldas">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-mujer/faldas/falda-blanca.jpg" alt="Producto 2">
+                <h2 class="productos__ropa-titulo">Falda Aesthetic Tableada Color Blanco</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="faldas">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/faldas/falda-mezclilla.jpg" alt="Producto 3">
+                <h2 class="productos__ropa-titulo">Falda Mezclilla Azul Fuerte</h2>
+                <p class="productos__ropa-precio">$260</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="faldas">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/faldas/falda-tableada-morado-claro.jpg" alt="Producto 4">
+                <h2 class="productos__ropa-titulo">Falda Tableada Color Morado Claro</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 2 -->
+            <div class="productos__ropa-cards" data-category="faldas">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/faldas/falda-tableada-azul-claro.jpg" alt="Producto 5">
+                <h2 class="productos__ropa-titulo">Falda Tableada Color Azul Claro</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="faldas">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/faldas/falda-rosa.rayas-azules.jpg" alt="Producto 6">
+                <h2 class="productos__ropa-titulo">Falda Aesthetic Rosa Rayas Azules</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="faldas">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-mujer/faldas/falda-gris.jpg" alt="Producto 7">
+                <h2 class="productos__ropa-titulo">Falda Aesthetic Tableada Color Gris</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="faldas">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/faldas/falda-roja-cuadros.jpg" alt="Producto 8">
+                <h2 class="productos__ropa-titulo">Falda Aesthetic Roja Cuadros Negros</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 3 -->
+            <div class="productos__ropa-cards" data-category="faldas">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/faldas/falda-tableada-beige.jpg" alt="Producto 9">
+                <h2 class="productos__ropa-titulo">Falda Aesthetic Tableada Color Rosa</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="faldas">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/faldas/falda-negra-rayas-blancas.jpg" alt="Producto 10">
+                <h2 class="productos__ropa-titulo">Falda Negra con Rayas Blancas</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="faldas">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/faldas/falda-roja-cuadros-negro.jpg" alt="Producto 11">
+                <h2 class="productos__ropa-titulo">Falda Cuadros Roja con Negro y Cadenas</h2>
+                <p class="productos__ropa-precio">$350</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="faldas">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-mujer/faldas/falda-cuadros-azul-negro.jpg" alt="Producto 12">
+                <h2 class="productos__ropa-titulo">Falda Cuadros Azul con Negro</h2>
+                <p class="productos__ropa-precio">$350</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="redes-sociales">
+                <h2>Siguenos en nuestras redes sociales</h2>
+                <a class="fab fa-facebook-f" href="#"></a>
+                <a class="fab fa-instagram" href="#"></a>
+                <a class="fab fa-twitter" href="#"></a>
+                <a class="fab fa-tiktok" href=""></a>
+            </div>
+            <div class="enlaces-importantes">
+                <h2>Enlaces importantes</h2>
+                <a href="#">Politica de Privacidad</a>
+                <a href="#">Terminos y Condiciones</a>
+                <a href="#">Aviso de no discriminación</a>
+            </div>
+            <div class="contacto">
+                <h2>Contacto</h2>
+                <p>Telefono: 8178363622</p>
+                <p>Correo: Tienda_ropa@gmail.com</p>
+                <p>Ubicación: Buena Vista #43, México</p>
+            </div>
+        </div>
+        <div class="footer-final">
+            <span></span>
+            <h4 class="titulo-final">&copy; Tienda de Ropa | Todos los derechos reservados</h4>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/3ec83c960a.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../js/search-button-function-2.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/toggle.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const categorySelect = document.getElementById('category-select');
+            const productoCards = document.getElementsByClassName('productos__ropa-cards');
+    
+            categorySelect.addEventListener('change', function () {
+                const selectedCategory = categorySelect.value;
+    
+                for (let i = 0; i < productoCards.length; i++) {
+                    const categories = productoCards[i].getAttribute('data-category').split(' ');
+    
+                    if (selectedCategory === 'todos' || categories.includes(selectedCategory)) {
+                        productoCards[i].style.display = 'block';
+                    } else {
+                        productoCards[i].style.display = 'none';
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

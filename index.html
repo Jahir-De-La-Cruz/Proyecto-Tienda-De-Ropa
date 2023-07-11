@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="Css/estilo.css?v12345">
+    <link rel="shortcut icon" href="img/logo-tienda.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+</head>
+<body>
+    
+    <header>
+        <div class="menu__contenedor">
+            <nav class="menu__contenedor-enlaces">
+                <ul class="menu__enlaces-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="paginas/gorras.html">Gorras</a></li>
+                    <li><a href="paginas/playeras.html">Playeras</a></li>
+                    <li><a href="paginas/pantalones.html">Pantalones</a></li>
+                    <li><a href="paginas/outfits.html">Outfits</a></li>
+                </ul>
+                <button class="cart-shopping"><i class="fa-solid fa-cart-shopping"></i></button>
+                <div class="cart-items">
+                    <h3>Carrito de compras</h3>
+                    <button class="cart-close-button">Cerrar carrito</button>
+                    <table id="cart-items-table">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre del Producto</th>
+                                <th>Precio</th>
+                                <th>Precio con descuento</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <p id="cart-total-price"></p>
+                    <button id="cart-button-buy">COMPRAR</button>
+                    <button id="cart-button-clear">VACIAR</button>
+                </div>
+            </nav>
+            <div class="menu__icono">
+                <a class="menu__contenedor-logo" href="">
+                    <h1 class="menu__logo-titulo">Tienda de Ropa</h1>
+                    <img  class="menu__logo-negocio" src="img/logo-tienda.png" alt="logo-negocio">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="info__tienda">
+        <div class="info__tienda-titulo">
+            <h2>La mejor tienda de ropa de todo México</h2><br>
+            <p>En Tienda de Ropa somos fabricantes y distribuidores de uniformes de excelente calidad, las sudaderas son 
+            una de nuestras especialidades. Dentro de nuestro stock de uniformes contamos con diversos modelos, 
+            tallas y colores de la más alta calidad, en un inventario listo para ser entregados sin mínimos en todo 
+            México. Además de poder pedir ropa diseñada a tu gusto, como con el logotipo de su empresa o negocio 
+            para mejorar su imagen corporativa, hasta ropa para su uso personal.</p><br>
+            <p>En Tienda de Ropa también contamos con representantes en 32 municipios de Nuevo León y un inventario de 
+            70 mil piezas listas para ser enviadas en cuanto la soliciten nuestros clientes; nos enorgullecemos de vestir 
+            a más de 500 mil trabajadores en todo México. </p><br>
+            <p>Nos caracterizamos por fabricar chamarras empresariales de la mejor calidad, con materiales reforzados 
+            con tecnologías Color Ultra Durable  y  Repelentes , lo que hace que los colores duren por mucho más tiempo 
+            aún con uso y lavado constante. Las telas que utilizamos es importada, con calidad Premium y fabricada en 
+            proceso interno; todas tienen costuras pequeñas y reforzadas.</p>
+        </div>
+    </section>
+
+    <section class="titulo__ropa1">
+        <h2 class="titulo__ropa-hombre">Hombres</h2>
+        <p class="titulo__ropa-hombre-descripcion">De todos los estilos! encuentra mas en la sección de 
+        <a href="paginas/outfits.html">Outfits</a></p>
+    </section>
+
+    <section class="productos">
+        <div class="productos__ropa-card">
+            <!-- fila 1 -->
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-hombre/outfit_1.jpg" alt="Producto 1">
+                <h2 class="productos__ropa-titulo">Gabardina con Saco Café, Pans Gris y zapatos negros</h2>
+                <p class="productos__ropa-precio">$2250</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-hombre/outfit_2.jpg" alt="Producto 2">
+                <h2 class="productos__ropa-titulo">Sudadera Amarilla con rayas, Camisa Blanca y Pantalón Negro</h2>
+                <p class="productos__ropa-precio">$850</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-hombre/outfit_3.jpg" alt="Producto 3">
+                <h2 class="productos__ropa-titulo">Sudadera Amarilla con Pantalón Blanco Holgado</h2>
+                <p class="productos__ropa-precio">$650</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-hombre/outfit_4.jpg" alt="Producto 4">
+                <h2 class="productos__ropa-titulo">Sueter Café con Pantalón Negro y Converse Gris</h2>
+                <p class="productos__ropa-precio">$950</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <!-- fila 2 -->
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-hombre/outfit_5.jpg" alt="Producto 5">
+                <h2 class="productos__ropa-titulo">Sudadera Gris Oscuro, Pantalón Café y Tenis Nike</h2>
+                <p class="productos__ropa-precio">$1950</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-hombre/outfit_6.jpg" alt="Producto 6">
+                <h2 class="productos__ropa-titulo">Sudadera Café Claro, Pantalón de Mezclilla y tenis blancos</h2>
+                <p class="productos__ropa-precio">$800</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-hombre/outfit_7.jpg" alt="Producto 7">
+                <h2 class="productos__ropa-titulo">Gorra Negra, Sueter Gris, Camisa Blanca y Pantalón Negro</h2>
+                <p class="productos__ropa-precio">$1200</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-hombre/outfit_8.jpg" alt="Producto 8">
+                <h2 class="productos__ropa-titulo">Camisa Blanca, Pantalón Gris Claro y Tenis Blancos</h2>
+                <p class="productos__ropa-precio">$800</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="titulo__ropa2">
+        <h2 class="titulo__ropa-mujer">Mujeres</h2>
+        <p class="titulo__ropa-mujer-descripcion">Diferentes tipos de moda! encuentra mas en la sección de 
+        <a href="paginas/outfits.html">Outfits</a></p>
+    </section>
+
+    <section class="productos">
+        <div class="productos__ropa-card">
+            <div class="productos__ropa-cards">
+                <!-- fila 1 -->
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-mujer/outfit-1.jpg" alt="Producto 1">
+                <h2 class="productos__ropa-titulo">Crop Top Blanco Mangas largas y Falda Tableada Rosa</h2>
+                <p class="productos__ropa-precio">$550</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-mujer/outfit-2.jpg" alt="Producto 2">
+                <h2 class="productos__ropa-titulo">Crop Top Negro sin Manga y Falda Tableada Gris</h2>
+                <p class="productos__ropa-precio">$550</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-mujer/outfit-3.jpg" alt="Producto 3">
+                <h2 class="productos__ropa-titulo">Crop Top Rosa Mangas Largas y Pantalón de Mezclilla Acampanado</h2>
+                <p class="productos__ropa-precio">$650</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-mujer/outfit-4.jpg" alt="Producto 4">
+                <h2 class="productos__ropa-titulo">Gorro Beige, Sudadera Negra, Pantalón Cuadrado y Botines</h2>
+                <p class="productos__ropa-precio">$1200</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <!-- fila 2 -->
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-mujer/outfit-5.jpg" alt="Producto 5">
+                <h2 class="productos__ropa-titulo">Sudadera Morada con Falda Café y Converse Negros</h2>
+                <p class="productos__ropa-precio">$1200</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-mujer/outfit-6.jpg" alt="Producto 6">
+                <h2 class="productos__ropa-titulo">Playera Manga Corta Negra y Pantalón Negro con Cadena</h2>
+                <p class="productos__ropa-precio">$800</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-mujer/outfit-7.jpg" alt="Producto 7">
+                <h2 class="productos__ropa-titulo">Sudadera color Beige con Pantalón de Mezclilla y Tenis</h2>
+                <p class="productos__ropa-precio">$950</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-mujer/outfit-8.jpg" alt="Producto 8">
+                <h2 class="productos__ropa-titulo">Sudadera Crop Top Gris con Pantalón Holgado de Mezclilla</h2>
+                <p class="productos__ropa-precio">$850</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="titulo__ropa3">
+        <h2 class="titulo__ropa-niños">Niños</h2>
+        <p class="titulo__ropa-niños-descripcion">De los 10-14 años! encuentra mas en la seccion de 
+        <a href="paginas/outfits.html">Outfits</a></p>
+    </section>
+
+    <section class="productos">
+        <div class="productos__ropa-card">
+            <!-- fila 1 -->
+            <div class="productos__ropa-cards">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-niños/outfit-1.jpg" alt="Producto 1">
+                <h2 class="productos__ropa-titulo">Gorra, Chaqueta con Playera Blanca, Pantalón Negro y Tenis</h2>
+                <p class="productos__ropa-precio">$750</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="img/ropa-niños/outfit-2.jpg" alt="Producto 2">
+                <h2 class="productos__ropa-titulo">Vestido color Amarillo con Puntos Blancos y Bolso de Regalo</h2>
+                <p class="productos__ropa-precio">$650</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-niños/outfit-3.jpg" alt="Producto 3">
+                <h2 class="productos__ropa-titulo">Chaqueta Gris con Playera Blanca con Pans Azul Marino</h2>
+                <p class="productos__ropa-precio">$550</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-niños/outfit-4.jpg" alt="Producto 4">
+                <h2 class="productos__ropa-titulo">Vestido color Rojo con Guaraches Cafes y Collar de Regalo</h2>
+                <p class="productos__ropa-precio">$650</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <!-- fila 2 -->
+            <div class="productos__ropa-cards">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-niños/outfit-5.jpg" alt="Producto 5">
+                <h2 class="productos__ropa-titulo">Gorra Negra, Chaqueta Negra, Playera de Rayas y Pantalón</h2>
+                <p class="productos__ropa-precio">$620</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="img/ropa-niños/outfit-6.jpg" alt="Producto 6">
+                <h2 class="productos__ropa-titulo">Playera Blanca con Sueter de Cuadros Rojo y Tenis Blancos</h2>
+                <p class="productos__ropa-precio">$500</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-niños/outfit-7.jpg" alt="Producto 7">
+                <h2 class="productos__ropa-titulo">Lentes Negros, Camisa de Cuadros y Pantalón de Mezclilla</h2>
+                <p class="productos__ropa-precio">$650</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="img/ropa-niños/outfit-8.jpg" alt="Producto 8">
+                <h2 class="productos__ropa-titulo">Boina Color Beige, Sudadera Azul y Falda Cuadrada Azul Claro</h2>
+                <p class="productos__ropa-precio">$750</p>
+                <button class="btnComprar" type="submit">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="redes-sociales">
+                <h2>Siguenos en nuestras redes sociales</h2>
+                <a class="fab fa-facebook-f" href="#"></a>
+                <a class="fab fa-instagram" href="#"></a>
+                <a class="fab fa-twitter" href="#"></a>
+                <a class="fab fa-tiktok" href=""></a>
+            </div>
+            <div class="enlaces-importantes">
+                <h2>Enlaces importantes</h2>
+                <a href="#">Politica de Privacidad</a>
+                <a href="#">Terminos y Condiciones</a>
+                <a href="#">Aviso de no discriminación</a>
+            </div>
+            <div class="contacto">
+                <h2>Contacto</h2>
+                <p>Telefono: 8178363622</p>
+                <p>Correo: Tienda_ropa@gmail.com</p>
+                <p>Ubicación: Buena Vista #43, México</p>
+            </div>
+        </div>
+        <div class="footer-final">
+            <span></span>
+            <h4 class="titulo-final">&copy; Tienda de Ropa | Todos los derechos reservados</h4>
+        </div>
+    </footer>
+
+    
+    <script src="https://kit.fontawesome.com/3ec83c960a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/sweetAlert.js"></script>
+    <script src="js/carrito-index.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.productos__ropa-card').slick({
+                slidesToShow: 3, // Número de elementos a mostrar en pantallas grandes
+                slidesToScroll: 1, // Número de elementos a desplazar por cada cambio de slide
+                autoplay: true, // Reproducir automáticamente el slider
+                autoplaySpeed: 2000, // Velocidad de reproducción en milisegundos (ejemplo: 2000 = 2 segundos)
+                responsive: [
+                    {
+                        breakpoint: 780, // Punto de quiebre para dispositivos móviles
+                        settings: {
+                            slidesToShow: 2, // Mostrar solo 2 elementos en dispositivos móviles
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 400, // Punto de quiebre para dispositivos móviles de 400px
+                        settings: {
+                            slidesToShow: 1, // Mostrar solo 1 elemento en dispositivos móviles de 400px
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+</body>
+</html>

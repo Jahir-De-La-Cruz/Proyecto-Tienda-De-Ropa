@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Playeras</title>
+    <link rel="stylesheet" href="../Css/toggle.css?v1">
+    <link rel="stylesheet" href="../Css/productos-playeras.css?v12">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/logo-tienda.png" type="image/x-icon">
+</head>
+<body>
+    
+    <header>
+        <div class="menu__contenedor">
+            <nav class="menu__contenedor-enlaces">
+                <ul class="menu__enlaces-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="gorras.html">Gorras</a></li>
+                    <li><a href="playeras.html">Playeras</a></li>
+                    <li><a href="pantalones.html">Pantalones</a></li>
+                    <li><a href="outfits.html">Outfits</a></li>
+                    <div class="menu__boton-buscar">
+                        <input type="text" placeholder="Buscar" id="search-input">
+                        <div class="btn">
+                            <button id="search-button"><i class="fas fa-search icon"></i></button>
+                        </div>
+                    </div>   
+                </ul>
+                <button class="cart-shopping"><i class="fa-solid fa-cart-shopping"></i></button>
+                <div class="cart-items">
+                    <h3>Carrito de compras</h3>
+                    <button class="cart-close-button">Cerrar carrito</button>
+                    <table id="cart-items-table">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre del Producto</th>
+                                <th>Precio</th>
+                                <th>Precio con descuento</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <p id="cart-total-price"></p>
+                    <button id="cart-button-buy">COMPRAR</button>
+                    <button id="cart-button-clear">VACIAR</button>
+                </div> 
+            </nav>   
+            <div class="menu__icono">
+                <a class="menu__contenedor-logo" href="">
+                    <h1 class="menu__logo-titulo">Tienda de Ropa</h1>
+                    <img  class="menu__logo-negocio" src="../img/logo-tienda.png" alt="logo-negocio">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div class="toggle">
+            <i id="icon" class="icon fa fa-moon"></i>
+        </div>
+    </div>
+
+    <section class="Producto__info">
+        <h2 class="Producto__titulo">Filtrar por categoría:</h2>
+        <select id="category-select" class="category-select">
+            <option value="todos">Todos</option>
+            <option value="Hombre">Playeras para Hombres</option>
+            <option value="mujer">Playeras para Mujeres</option>
+            <option value="friki">Playeras para frikis</option>
+        </select>
+    </section>
+    
+    <section class="productos">
+        <div class="productos__ropa-card">
+            <!-- fila 1 -->
+            <div class="productos__ropa-cards" data-category="Hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-supreme-blanca.jpg" alt="Producto 1">
+                <h2 class="productos__ropa-titulo">Playera Supreme Blanca</h2>
+                <p class="productos__ropa-precio">$450</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-supreme-gris.jpg" alt="Producto 2">
+                <h2 class="productos__ropa-titulo">Playera Supreme Gris Claro</h2>
+                <p class="productos__ropa-precio">$420</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-supreme-rosa-negro.jpg" alt="Producto 3">
+                <h2 class="productos__ropa-titulo">Playera Supreme Rosa con Negro</h2>
+                <p class="productos__ropa-precio">$450</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-supreme-negra.jpg" alt="Producto 4">
+                <h2 class="productos__ropa-titulo">Playera Supreme Negra</h2>
+                <p class="productos__ropa-precio">$460</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 2 -->
+            <div class="productos__ropa-cards" data-category="Hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-ecko-colores.jpg" alt="Producto 5">
+                <h2 class="productos__ropa-titulo">Playera Ecko Unlimited Negro</h2>
+                <p class="productos__ropa-precio">$350</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-ecko-negra-amarillo.jpg" alt="Producto 6">
+                <h2 class="productos__ropa-titulo">Playera Ecko Negra con Amarillo</h2>
+                <p class="productos__ropa-precio">$330</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-ecko-negra-rayas-blancas.jpg" alt="Producto 7">
+                <h2 class="productos__ropa-titulo">Playera Ecko Negra con Rayas blancas</h2>
+                <p class="productos__ropa-precio">$350</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-ecko-negra-rojo.jpg" alt="Producto 8">
+                <h2 class="productos__ropa-titulo">Playera Ecko Negra con Rojo</h2>
+                <p class="productos__ropa-precio">$380</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 3 -->
+            <div class="productos__ropa-cards" data-category="Hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-ecko-unlimited-1972.jpg" alt="Producto 9">
+                <h2 class="productos__ropa-titulo">Playera Ecko Unlimited Gris</h2>
+                <p class="productos__ropa-precio">$350</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-polo-york-team-polo-club.jpg" alt="Producto 10">
+                <h2 class="productos__ropa-titulo">Playera Polo York Team Polo Club</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-ufc-venum.jpg" alt="Producto 11">
+                <h2 class="productos__ropa-titulo">Playera UFC Venum Negro</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-ufc-venum-blanco.jpg" alt="Producto 12">
+                <h2 class="productos__ropa-titulo">Playera UFC Venum Blanco</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 4 -->
+            <div class="productos__ropa-cards" data-category="Hombre">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-drew-house-negra.jpg" alt="Producto 13">
+                <h2 class="productos__ropa-titulo">Playera Drew House Color Negro</h2>
+                <p class="productos__ropa-precio">$280</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-drew-house-roja.jpg" alt="Producto 14">
+                <h2 class="productos__ropa-titulo">Playera Drew House Color Rojo</h2>
+                <p class="productos__ropa-precio">$280</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-drew-house-verde-menta.jpg" alt="Producto 15">
+                <h2 class="productos__ropa-titulo">Playera Drew House Color Verde Menta</h2>
+                <p class="productos__ropa-precio">$280</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-drew-house-rosa.jpg" alt="Producto 16">
+                <h2 class="productos__ropa-titulo">Playera Drew House Color Rosa</h2>
+                <p class="productos__ropa-precio">$280</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 5 -->
+            <div class="productos__ropa-cards" data-category="Hombre">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-degradado-color-rojo.jpg" alt="Producto 17">
+                <h2 class="productos__ropa-titulo">Playera Degradado color Rojo</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-degradado-color-verde.jpg" alt="Producto 18">
+                <h2 class="productos__ropa-titulo">Playera Degradado color Verde</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-degradado-color-morado.jpg" alt="Producto 19">
+                <h2 class="productos__ropa-titulo">Playera Degradado color Morado</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="Hombre">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-degradado-color-naranja.jpg" alt="Producto 20">
+                <h2 class="productos__ropa-titulo">Playera Degradado color Naranja</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos">
+        <div class="productos__ropa-card">
+            <!-- fila 1 -->
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-just-vibin.jpg" alt="Producto 1">
+                <h2 class="productos__ropa-titulo">Playera Just Vivin Color Café</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-personas-color-mostaza.jpg" alt="Producto 2">
+                <h2 class="productos__ropa-titulo">Playera Estampado Personas Color Café</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-blanca-caritas.jpg" alt="Producto 3">
+                <h2 class="productos__ropa-titulo">Playera Blanca con Emojis</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-california-blanco.jpg" alt="Producto 4">
+                <h2 class="productos__ropa-titulo">Playera Crop Top California Blanco</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 2 -->
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-california-negro.jpg" alt="Producto 5">
+                <h2 class="productos__ropa-titulo">Playera Crop Top California Negro</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-hongos-blanco-cafe.jpg" alt="Producto 6">
+                <h2 class="productos__ropa-titulo">Playera Crop Top Hongos Bicolor</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-corazon-cafe.jpg" alt="Producto 7">
+                <h2 class="productos__ropa-titulo">Playera Crop Top Corazón Café</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-osito-cafe.jpg" alt="Producto 8">
+                <h2 class="productos__ropa-titulo">Playera Crop Top Osito Café</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 3 -->
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-negro-tiras.jpg" alt="Producto 9">
+                <h2 class="productos__ropa-titulo">Crop Top Negro de Tiras</h2>
+                <p class="productos__ropa-precio">$300</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-blanco-negro.jpg" alt="Producto 10">
+                <h2 class="productos__ropa-titulo">Crop Top Bicolor Blanco y Negro</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-cuello-redondo-gris.jpg" alt="Producto 11">
+                <h2 class="productos__ropa-titulo">Playera Crop Top Color Gris</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-mariposas-morado.jpg" alt="Producto 12">
+                <h2 class="productos__ropa-titulo">Crop Top Color Morado Mariposas</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 4 -->
+            <div class="productos__ropa-cards" data-category="mujer">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-diferentes-colores.jpg" alt="Producto 13">
+                <h2 class="productos__ropa-titulo">Playera Crop Top Cualquier Color</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-negro-manos.jpg" alt="Producto 14">
+                <h2 class="productos__ropa-titulo">Crop Top Negro Estampado Manos</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-negro-sin-mangas.jpg" alt="Producto 15">
+                <h2 class="productos__ropa-titulo">Playera Crop Top Negro sin Mangas</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-california-negro-sin-mangas.jpg" alt="Producto 16">
+                <h2 class="productos__ropa-titulo">Crop Top California Negro sin Mangas</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 5 -->
+            <div class="productos__ropa-cards" data-category="mujer">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-blanco-boston.jpg" alt="Producto 17">
+                <h2 class="productos__ropa-titulo">Playera Crop Top Blanco Boston</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-blanco-cara-amarilla.jpg" alt="Producto 18">
+                <h2 class="productos__ropa-titulo">Crop Top Blanco con Cara Amarilla</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-blanco-dufourspitze.jpg" alt="Producto 19">
+                <h2 class="productos__ropa-titulo">Playera Crop Top Blanco Manga Corta</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="mujer">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-sin-mangas-diferentes-colores.jpg" alt="Producto 20">
+                <h2 class="productos__ropa-titulo">Crop Top sin Mangas Cualquier Color</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos">
+        <div class="productos__ropa-card">
+            <!-- fila 1 -->
+            <div class="productos__ropa-cards" data-category="friki">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-ad-daki.jpg" alt="Producto 1">
+                <h2 class="productos__ropa-titulo">Playera AD Daki Kimetsu No Yaiba</h2>
+                <p class="productos__ropa-precio">$230</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="friki">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-ad-logan-x23.jpg" alt="Producto 2">
+                <h2 class="productos__ropa-titulo">Playera AD Logan, Marvel</h2>
+                <p class="productos__ropa-precio">$230</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="friki">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-ad-new-mutants.jpg" alt="Producto 3">
+                <h2 class="productos__ropa-titulo">Playera AD New Mutants, Marvel</h2>
+                <p class="productos__ropa-precio">$230</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="friki">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-ad-spiderman-nwh.jpg" alt="Producto 4">
+                <h2 class="productos__ropa-titulo">Playera AD Spiderman NWH, Marvel</h2>
+                <p class="productos__ropa-precio">$230</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 2 -->
+            <div class="productos__ropa-cards" data-category="friki">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-ad-dead-by-daylight.jpg" alt="Producto 5">
+                <h2 class="productos__ropa-titulo">Playera AD Dead By DayLight</h2>
+                <p class="productos__ropa-precio">$230</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="friki">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-kny-friki.jpg" alt="Producto 6">
+                <h2 class="productos__ropa-titulo">Playera Demon Slayer Color Gris</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="friki">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-snk-friki.jpg" alt="Producto 7">
+                <h2 class="productos__ropa-titulo">Playera Legión de Reconocimiento SNK</h2>
+                <p class="productos__ropa-precio">$230</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="friki">
+                <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top.dn-L.jpg" alt="Producto 8">
+                <h2 class="productos__ropa-titulo">Playera Crop Top L Death Note</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <!-- fila 3 -->
+            <div class="productos__ropa-cards" data-category="friki">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-mujer/playeras/playera-crop-top-demon-slayer-nezuko.jpg" alt="Producto 9">
+                <h2 class="productos__ropa-titulo">Playera Crop Top Manga Larga Nezuko</h2>
+                <p class="productos__ropa-precio">$250</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="friki">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-dbs-vegeta-friki.jpg" alt="Producto 10">
+                <h2 class="productos__ropa-titulo">Playera DBS Vegeta Ultra Ego</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="friki">
+		        <span class="descuento-span">Descuento 30%</span>
+                <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-manga-larga-7pecados.jpg" alt="Producto 11">
+                <h2 class="productos__ropa-titulo">Playera Manga Larga Meliodas NNT</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+            <div class="productos__ropa-cards" data-category="friki">
+                <span class="descuento-span">Descuento 30%</span>
+		        <img class="productos__ropa-img" src="../img/ropa-hombre/playeras/playera-spy-x-family-friki.jpg" alt="Producto 12">
+                <h2 class="productos__ropa-titulo">Playera Manga Corta SPY X FAMILY</h2>
+                <p class="productos__ropa-precio">$200</p>
+                <button class="btnComprar" type="submit">Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="redes-sociales">
+                <h2>Siguenos en nuestras redes sociales</h2>
+                <a class="fab fa-facebook-f" href="#"></a>
+                <a class="fab fa-instagram" href="#"></a>
+                <a class="fab fa-twitter" href="#"></a>
+                <a class="fab fa-tiktok" href=""></a>
+            </div>
+            <div class="enlaces-importantes">
+                <h2>Enlaces importantes</h2>
+                <a href="#">Politica de Privacidad</a>
+                <a href="#">Terminos y Condiciones</a>
+                <a href="#">Aviso de no discriminación</a>
+            </div>
+            <div class="contacto">
+                <h2>Contacto</h2>
+                <p>Telefono: 8178363622</p>
+                <p>Correo: Tienda_ropa@gmail.com</p>
+                <p>Ubicación: Buena Vista #43, México</p>
+            </div>
+        </div>
+        <div class="footer-final">
+            <span></span>
+            <h4 class="titulo-final">&copy; Tienda de Ropa | Todos los derechos reservados</h4>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/3ec83c960a.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../js/search-button-function-2.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/toggle.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const categorySelect = document.getElementById('category-select');
+            const productoCards = document.getElementsByClassName('productos__ropa-cards');
+    
+            categorySelect.addEventListener('change', function () {
+                const selectedCategory = categorySelect.value;
+    
+                for (let i = 0; i < productoCards.length; i++) {
+                    const categories = productoCards[i].getAttribute('data-category').split(' ');
+    
+                    if (selectedCategory === 'todos' || categories.includes(selectedCategory)) {
+                        productoCards[i].style.display = 'block';
+                    } else {
+                        productoCards[i].style.display = 'none';
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
