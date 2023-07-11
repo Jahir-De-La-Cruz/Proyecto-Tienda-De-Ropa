@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Ysabeau SC', sans-serif;
+    background-color: #F8F7F7;
+}
+
+/* Menu de la Pagina */
+
+.menu__contenedor {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    width: 100%;
+    min-height: 20vh;
+    /* position: fixed; */
+}
+
+.menu__contenedor-enlaces .menu__enlaces-links {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.menu__contenedor-enlaces .menu__enlaces-links li a {
+    color: #F4B52B;
+    padding: 0 10px;
+}
+
+.menu__contenedor-enlaces .menu__enlaces-links li a:hover {
+    color: #bd8611;
+}
+
+.menu__contenedor-enlaces {
+    display: flex;
+    align-items: center;
+}
+
+.menu__icono {
+    padding: 10px;
+}
+
+.menu__contenedor-logo {
+    display: flex;
+    color: #F4B52B;
+}
+
+.menu__contenedor-logo .menu__logo-titulo {
+    padding-top: 35px;
+    padding-left: 10px;
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.menu__contenedor-logo .menu__logo-negocio {
+    max-width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Información de la compra */
+
+.Compra__info {
+    background-color: #f8f3f3;
+    padding: 40px;
+    margin: 20px 0px 20px 0px;
+}
+
+.Compra__info-titulo {
+    font-size: 45px;
+    font-weight: 700;
+    font-style: italic;
+    color: #F4B52B;
+    text-align: center;
+}
+
+.Compra__info-descripcion {
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    text-align: center;
+}
+
+/* Formulario Compra */
+
+.Formulario__compra {
+    padding: 30px;
+    background-color: #F8F7F7;
+}
+
+.Formulario__compra-contenedor {
+    max-width: 500vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #9c6d08; */
+}
+
+.Formulario__compra-form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #9c6d08;
+    box-shadow: 2px 8px 6px rgba(0, 0, 0, .7);
+}
+
+.Formulario__compra-form > label {
+    font-size: 25px;
+    color: #bd8611;
+    text-align: center;
+}
+
+.Formulario__compra-form input[type="text"] {
+    width: 100%;
+    height: 40px;
+    background-color: #f8f3f3;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+}
+
+.Formulario__compra-form input::placeholder {
+    color: #838383;
+}
+
+.Formulario__compra-form input[type="checkbox"] {
+    margin: 20px 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.Formulario__compra-form .Formulario__compra-form-chk {
+    display: flex;
+    align-items: center;
+}
+
+.Formulario__compra-form .Formulario__compra-form-chk label {
+    margin-left: 4px;
+}
+
+.Formulario__compra-form .btnConfirmar {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #F4B52B;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.Formulario__compra-form .btnConfirmar:hover {
+    background-color: #bd8611;
+}
+
+/* Footer de la pagina */
+
+footer {
+    background-color: #000;
+    padding: 20px;
+    min-height: 40vh;
+    color: #bd8611;
+  }
+  
+  .contenedor-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .redes-sociales {
+    text-align: center;
+  }
+  
+  .redes-sociales h2 {
+    font-size: 25px;
+    padding: 10px;
+  }
+  
+  .redes-sociales a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 7px;
+    margin-left: 10px;
+    background-color: #d4960f;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .redes-sociales a:nth-child(2) {
+    padding: 8px 12px;
+  }
+  
+  .redes-sociales a:nth-child(4) {
+    padding: 8px 9px;
+  }
+  
+  .redes-sociales a:hover {
+    background-color: #9c6d08;
+  }
+  
+  .enlaces-importantes h2 {
+    font-size: 25px;
+    padding: 10px;
+  }
+  
+  .enlaces-importantes a {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #f8f7f7;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  
+  .enlaces-importantes a:hover {
+    text-decoration: underline;
+  }
+  
+  .contacto h2 {
+    font-size: 25px;
+    padding: 10px;
+  }
+  
+  .contacto p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #f8f7f7;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  
+  .footer-final {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  
+  span {
+    width: 100%;
+    height: 2px;
+    background-color: #f8f7f7;
+  }
+  
+  .titulo-final {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 25px;
+  }
+
+@media screen and (max-width: 780px) {
+    .menu__contenedor {
+        min-height: 10vh;
+        flex-direction: column;
+    }
+
+    .menu__contenedor-enlaces .menu__enlaces-links {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 0px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .menu__icono {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+    }
+        
+    .menu__contenedor-logo .menu__logo-titulo {
+        padding: 20px;
+        font-size: 25px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    .menu__contenedor-logo .menu__logo-negocio {
+        max-width: 100%;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .Compra__info {
+        padding: 20px;
+    }
+
+    .Compra__info-titulo {
+        font-size: 35px;
+    }
+
+    .Compra__info-descripcion {
+        font-size: 20px;
+    }
+
+    .Formulario__compra {
+        padding: 20px;
+    }
+
+    .Formulario__compra-contenedor {
+        max-width: 300vw;
+        height: auto;
+        padding: 10px;
+    }
+  
+    .Formulario__compra-form {
+        padding: 30px 20px;
+        max-width: 300vh;
+        height: 600px;
+    }
+
+    .Formulario__compra-form > label {
+        font-size: 20px;
+    }
+
+    .Formulario__compra-form input[type="text"] {
+        width: 100%;
+        height: 30px;
+        padding: 8px;
+        margin: 0;
+        font-size: 15px;
+    }
+    
+    .Formulario__compra-form input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .Formulario__compra-form .btnConfirmar {
+        width: 100%;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .contenedor-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes-sociales h2 {
+        font-size: 20px;
+    }
+
+    .redes-sociales a {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+    
+    .redes-sociales a:nth-child(2) {
+        padding: 6px 4px;
+    }
+    
+    .redes-sociales a:nth-child(3) {
+        padding: 6px 4px;
+    }
+
+    .redes-sociales a:nth-child(4) {
+        padding: 6px;
+    }
+
+    .redes-sociales a:nth-child(5) {
+        padding-bottom: 8px;
+    }
+    
+    .enlaces-importantes h2 {
+        font-size: 20px;
+    }
+
+    .enlaces-importantes a {
+        font-size: 15px;
+    }
+
+    .contacto h2 {
+        font-size: 20px;
+    }
+
+    .contacto p {
+        font-size: 15px;
+    }
+
+    .titulo-final {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu__contenedor {
+        min-height: 10vh;
+        flex-direction: column;
+    }
+
+    .menu__contenedor-enlaces .menu__enlaces-links {
+        display: flex;
+        justify-content: center;
+        flex-basis: 20%;
+        text-align: center;
+        padding: 0px;
+        margin-right: 0;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .menu__boton-buscar input {
+        width: 0px;
+        height: 20px;
+        font-size: 12px;
+        display: none;
+    }
+
+    .menu__boton-buscar .btn {
+        margin-left: 10px;
+        position: relative;
+    }
+  
+    .menu__boton-buscar .btn button {
+        top: -14px;
+        right: -10px;
+        width: 30px;
+        height: 30px;
+        display: none;
+    }
+
+    .menu__contenedor-enlaces .cart-shopping {
+        margin-left: 0;
+        font-size: 20px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .menu__icono {
+        padding: 3px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu__contenedor-logo .menu__logo-titulo {
+        padding: 8px;
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .menu__contenedor-logo .menu__logo-negocio {
+        max-width: 100%;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .Compra__info {
+        padding: 10px;
+    }
+
+    .Compra__info-titulo {
+        font-size: 30px;
+    }
+
+    .Compra__info-descripcion {
+        font-size: 18px;
+    }
+
+    .Formulario__compra {
+        padding: 10px 20px;
+    }
+  
+    .Formulario__compra-form {
+        padding: 20px;
+        max-width: 300vh;
+        height: 600px;
+    }
+
+    .Formulario__compra-form > label {
+        font-size: 18px;
+    }
+
+    .Formulario__compra-form input[type="text"] {
+        font-size: 12px;
+    }
+    
+    .Formulario__compra-form input[type="checkbox"] {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .Formulario__compra-form .btnConfirmar {
+        margin-top: 10px;
+        width: 100%;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .contenedor-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes-sociales h2 {
+        font-size: 16px;
+    }
+
+    .redes-sociales a {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .redes-sociales a:nth-child(2) {
+        padding: 4px 3px;
+    }
+
+    .redes-sociales a:nth-child(3) {
+        padding: 3px 0px;
+    }
+
+    .redes-sociales a:nth-child(4) {
+        padding: 2px;
+    }
+
+    .redes-sociales a:nth-child(5) {
+        padding-bottom: 6px;
+        padding: 2px;
+    }
+
+    .enlaces-importantes h2 {
+        font-size: 16px;
+    }
+
+    .enlaces-importantes a {
+        font-size: 12px;
+    }
+
+    .contacto h2 {
+        font-size: 16px;
+    }
+
+    .contacto p {
+        font-size: 12px;
+    }
+
+    .titulo-final {
+        font-size: 16px;
+    }
+}

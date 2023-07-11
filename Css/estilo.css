@@ -1,0 +1,794 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Estilo sweetAlert */
+
+.swal-custom-popup {
+    background-color: #fff;
+}
+
+.swal-custom-title {
+    font-size: 35px;
+    color: #000;
+}
+
+.swal-custom-text {
+    font-size: 20px;
+    text-align: center;
+}
+
+.swal-custom-text b {
+    color: #ff0000;
+}
+
+.swal-custom-button {
+    background-color: #F4B52B;
+    color: #fff;
+    border: 2px solid #9c6d08;
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Estilos Generales */
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+}
+
+body {
+    font-family: 'Ysabeau SC', sans-serif;
+    background-color: #F8F7F7;
+}
+
+/* Menu de la Pagina */
+
+header {
+    background-image: url("../img/banner-personas.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    min-height: 95vh;
+    width: 100%
+}
+
+.menu__contenedor {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    width: 100%;
+    min-height: 20vh;
+    /* position: fixed; */
+}
+
+.menu__contenedor-enlaces .menu__enlaces-links {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.menu__contenedor-enlaces .menu__enlaces-links li a {
+    color: #F4B52B;
+    padding: 0 10px;
+}
+
+.menu__contenedor-enlaces .menu__enlaces-links li a:hover {
+    color: #bd8611;
+}
+
+.menu__contenedor-enlaces {
+    display: flex;
+    align-items: center;
+}
+
+.menu__contenedor-enlaces .cart-shopping  {
+    margin-left: 20px;
+    font-size: 30px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.menu__contenedor-enlaces .cart-shopping i {
+    color: #F4B52B;
+}
+
+.cart-items {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+.cart-items > .cart-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+    background-color: #a22;
+}
+  
+.cart-items.show {
+    display: block;
+}
+  
+.cart-items table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 6px;
+}
+  
+.cart-items th,
+.cart-items td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+  
+.cart-items th:first-child,
+.cart-items td:first-child {
+    width: 80px;
+}
+  
+#cart-total-price {
+    margin: 10px 0;
+    font-weight: bold;
+}
+  
+.cart-items button {
+    width: 100px;
+    height: 40px;
+    background-color: #F4B52B;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+  
+.menu__icono {
+    padding: 10px;
+}
+
+.menu__contenedor-logo {
+    display: flex;
+    color: #F4B52B;
+}
+
+.menu__contenedor-logo .menu__logo-titulo {
+    padding-top: 35px;
+    padding-left: 10px;
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.menu__contenedor-logo .menu__logo-negocio {
+    max-width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Informacion de tienda */
+
+.info__tienda {
+    margin-top: 20px;
+    padding: 30px 20px;
+    /* background-color: #f8f7f7; */
+}
+
+.info__tienda .info__tienda-titulo h2 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.info__tienda .info__tienda-titulo p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Secciones-Ropa-Hombre */
+
+.titulo__ropa1 {
+    background-color: #000000;
+    padding: 40px;
+    margin: 20px 0px 0px 0px;
+}
+
+.titulo__ropa-hombre {
+    font-size: 45px;
+    font-weight: 700;
+    font-style: italic;
+    color: #F4B52B;
+    text-align: center;
+}
+
+.titulo__ropa-hombre-descripcion {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    color: #8d8d8d;
+    text-align: center;
+}
+
+/* Secciones-Ropa-Mujer */
+
+.titulo__ropa2 {
+    background-color: #030303;
+    padding: 40px;
+}
+
+.titulo__ropa-mujer {
+    font-size: 45px;
+    font-weight: 700;
+    font-style: italic;
+    color: #F4B52B;
+    text-align: center;
+}
+
+.titulo__ropa-mujer-descripcion {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    color: #8d8d8d;
+    text-align: center;
+}
+
+/* Secciones-Ropa-Niños */
+
+.titulo__ropa3 {
+    background-color: #030303;
+    padding: 40px;
+}
+
+.titulo__ropa-niños {
+    font-size: 45px;
+    font-weight: 700;
+    font-style: italic;
+    color: #F4B52B;
+    text-align: center;
+}
+
+.titulo__ropa-niños-descripcion {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    color: #8d8d8d;
+    text-align: center;
+}
+
+/* Cards Ropa Hombre */
+
+.productos {
+    /* background-color: #F8F7F7; */
+    padding: 60px 20px;
+}
+
+.productos__ropa-card {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* position: relative; */
+}
+
+.productos__ropa-cards {
+    max-width: 100%;
+    height: 280px;
+    padding: 10px;
+    margin: 10px;
+    /* background-color: #fff; */
+    box-shadow: 2px 8px 6px rgba(0, 0, 0, .7);
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.productos__ropa-cards span {
+    position: absolute;
+    top: 25px;
+    width: 110px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 6px;
+    margin-left: 80px;
+    background-color: #9c6d08;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, .7);
+    z-index: 1;
+}
+
+.productos__ropa-cards img {
+    width: 100%;
+    height: 350px;
+    padding-bottom: 10px;
+    object-fit: cover;
+}
+
+.productos__ropa-cards .productos__ropa-titulo {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.productos__ropa-cards .productos__ropa-precio {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.productos__ropa-cards .btnComprar {
+    width: 100%;
+    height: 30px;
+    background-color: #F4B52B;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.productos__ropa-cards .btnComprar:hover {
+    background-color: #bd8611;
+}
+
+.slick-next.slick-arrow,
+.slick-prev.slick-arrow {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Footer */
+
+footer {
+    background-color: #000;
+    padding: 20px;
+    min-height: 40vh;
+    color: #bd8611;
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociales {
+    text-align: center;
+}
+
+.redes-sociales h2 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.redes-sociales a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 7px;
+    margin-left: 10px;
+    background-color: #d4960f;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.redes-sociales a:nth-child(2) {
+    padding: 8px 12px;
+}
+
+.redes-sociales a:nth-child(4) {
+    padding: 8px 9px;
+}
+
+.redes-sociales a:hover {
+    background-color: #9c6d08;
+}
+
+.enlaces-importantes h2 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.enlaces-importantes a {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #f8f7f7;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.enlaces-importantes a:hover {
+    text-decoration: underline;
+}
+
+.contacto h2 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.contacto p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #f8f7f7;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.footer-final {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+span {
+    width: 100%;
+    height: 2px;
+    background-color: #f8f7f7;
+}
+
+.titulo-final {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 780px) {
+    header {
+        min-height: 90vh;
+        background-image: url("../img/banner-personas.png");
+        background-position: center;
+        object-fit: cover;
+    }
+
+    .menu__contenedor {
+        min-height: 10vh;
+        flex-direction: column;
+    }
+
+    .menu__contenedor-enlaces .menu__enlaces-links {
+        display: flex;
+        justify-content: center;
+        flex-basis: 20%;
+        text-align: center;
+        padding: 0px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .menu__contenedor-enlaces .cart-shopping  {
+        margin-left: 0;
+        font-size: 30px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .menu__icono {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+    }
+        
+    .menu__contenedor-logo .menu__logo-titulo {
+        padding: 20px;
+        font-size: 25px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    .menu__contenedor-logo .menu__logo-negocio {
+        max-width: 100%;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .info__tienda {
+        margin-top: 20px;
+        padding: 20px;
+        /* background-color: #f8f7f7; */
+    }
+    
+    .info__tienda .info__tienda-titulo h2 {
+        font-size: 25px;
+    }
+    
+    .info__tienda .info__tienda-titulo p {
+        font-size: 18px;
+    }
+
+    .productos__ropa-cards img {
+        width: 100%;
+        height: 300px;
+        padding-bottom: 10px;
+        /* object-fit: cover; */
+    }
+
+    .contenedor-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes-sociales h2 {
+        font-size: 20px;
+    }
+
+    .redes-sociales a {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+    
+    .redes-sociales a:nth-child(2) {
+        padding: 6px 4px;
+    }
+    
+    .redes-sociales a:nth-child(3) {
+        padding: 6px 4px;
+    }
+
+    .redes-sociales a:nth-child(4) {
+        padding: 6px;
+    }
+
+    .redes-sociales a:nth-child(5) {
+        padding-bottom: 8px;
+    }
+    
+    .enlaces-importantes h2 {
+        font-size: 20px;
+    }
+
+    .enlaces-importantes a {
+        font-size: 15px;
+    }
+
+    .contacto h2 {
+        font-size: 20px;
+    }
+
+    .contacto p {
+        font-size: 15px;
+    }
+
+    .titulo-final {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        min-height: 50vh;
+        background-image: url("../img/banner-personas.png");
+        background-position: center;
+        object-fit: cover;
+    }
+
+    .menu__contenedor {
+        min-height: 10vh;
+        flex-direction: column;
+    }
+
+    .menu__contenedor-enlaces .menu__enlaces-links {
+        display: flex;
+        justify-content: center;
+        flex-basis: 20%;
+        text-align: center;
+        padding: 0px;
+        margin-right: 0px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .menu__contenedor-enlaces .cart-shopping {
+        margin-left: 0;
+        font-size: 20px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .cart-items {
+        bottom: 10px;
+        right: 10px;
+        padding: 4px;
+        margin: 10px;
+    }
+    
+    .cart-items th,
+    .cart-items td {
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+    .cart-items th:first-child,
+    .cart-items td:first-child {
+        width: 60px;
+    }
+    
+    .cart-items button {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .menu__icono {
+        padding: 3px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu__contenedor-logo .menu__logo-titulo {
+        padding: 8px;
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .menu__contenedor-logo .menu__logo-negocio {
+        max-width: 100%;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .info__tienda {
+        margin-top: 8px;
+        padding: 8px;
+        /* background-color: #f8f7f7; */
+    }
+
+    .info__tienda .info__tienda-titulo h2 {
+        font-size: 18px;
+    }
+
+    .info__tienda .info__tienda-titulo p {
+        font-size: 14px;
+    }
+
+    .titulo__ropa1 {
+        padding: 20px;
+    }
+
+    .titulo__ropa-hombre {
+        font-size: 35px;
+    }
+
+    .titulo__ropa-hombre-descripcion {
+        font-size: 20px;
+    }
+
+    .titulo__ropa2 {
+        padding: 20px;
+    }
+
+    .titulo__ropa-mujer {
+        font-size: 35px;
+    }
+
+    .titulo__ropa-mujer-descripcion {
+        font-size: 20px;
+    }
+
+    .titulo__ropa3 {
+        padding: 20px;
+    }
+
+    .titulo__ropa-niños {
+        font-size: 35px;
+    }
+
+    .titulo__ropa-niños-descripcion {
+        font-size: 20px;
+    }
+
+    .productos__ropa-cards {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 500px;
+        position: relative;
+    }
+    
+    .productos__ropa-cards img {
+        height: 200px;
+    }
+
+    .productos__ropa-cards span {
+        top: 18px;
+        left: 1px;
+        /* right: 4px; */
+        width: 100px;
+        height: 24px;
+        margin-left: 60px;
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    .productos__ropa-cards .productos__ropa-titulo {
+        font-size: 16px;
+    }
+
+    .productos__ropa-cards .productos__ropa-precio {
+        font-size: 14px;
+    }
+
+    .productos__ropa-cards .btnComprar {
+        height: 24px;
+    }
+
+    .contenedor-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes-sociales h2 {
+        font-size: 16px;
+    }
+
+    .redes-sociales a {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .redes-sociales a:nth-child(2) {
+        padding: 4px 3px;
+    }
+
+    .redes-sociales a:nth-child(3) {
+        padding: 3px 0px;
+    }
+
+    .redes-sociales a:nth-child(4) {
+        padding: 2px;
+    }
+
+    .redes-sociales a:nth-child(5) {
+        padding-bottom: 6px;
+        padding: 2px;
+    }
+
+    .enlaces-importantes h2 {
+        font-size: 16px;
+    }
+
+    .enlaces-importantes a {
+        font-size: 12px;
+    }
+
+    .contacto h2 {
+        font-size: 16px;
+    }
+
+    .contacto p {
+        font-size: 12px;
+    }
+
+    .titulo-final {
+        font-size: 16px;
+    }
+}
